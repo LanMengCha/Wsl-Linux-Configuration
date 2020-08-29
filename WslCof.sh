@@ -35,5 +35,5 @@ sudo apt-get install python3-pip && sudo pip install thefuck
 fuck
 fuck
 source ~/.zshrc
-
+echo "感谢使用，建议重启一下"
 
