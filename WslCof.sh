@@ -12,6 +12,12 @@ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 echo "安装语法高亮插件..."
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 chsh -s /bin/zsh
+echo '		         __                                     __'
+echo '		  ____  / /_     ____ ___  __  __   ____  _____/ /_'
+echo '		 / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \'
+echo '		/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / /' 
+echo '		\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/ '   
+echo '		                        /____/                     '  
 echo "全部安装完毕"
 echo "请使用 “sudo vim ~/.zshrc”文件中更改ohmyzsh主题和插件列表,或在项目目录里找到.zshrc替换掉"
 echo "接下来安装xfce4和vncserver软件包"
