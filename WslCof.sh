@@ -2,8 +2,7 @@ echo "Kali_Wsl配置 && 安装脚本"
 echo "国内源请自行更换.."
 echo "开始汉化,结果不会立刻生效，请在脚本执行完后重启wsl..."
 sudo apt install -y language-pack-zh-hans language-pack-zh-hans-base
-echo "LANG=zh_CN.UTF-8" >> ~/.profile
-sudo echo "LANG=zh_CN.UTF-8" >> ~/.profile
+echo "LANG=zh_CN.UTF-8" >> ~/.profile || sudo echo "LANG=zh_CN.UTF-8" >> ~/.profile
 echo "成功..."
 echo "项目内的其他文件都没什么用（都被我放进来了）除了.zshrc，懒的配置的可以把.zshrc cp到你的zsh目录里"
 echo "测试apt..."
