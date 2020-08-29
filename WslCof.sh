@@ -1,5 +1,6 @@
 echo "Kali_Wsl配置 && 安装脚本"
 echo "国内源请自行更换.."
+echo "项目内的其他文件都没什么用（都被我放进来了）除了.zshrc，懒的配置的可以把.zshrc cp到你的zsh目录里"
 echo "测试apt..."
 sudo apt -f install || echo "apt修复中..." sudo mv /var/lib/dpkg/info/ /var/lib/dpkg/info_old/ && sudo mkdir /var/lib/dpkg/info/ && sudo apt-get update && sudo apt-get -f install && sudo mv /var/lib/dpkg/info/* /var/lib/dpkg/info_old/ && sudo rm -rf /var/lib/dpkg/info && sudo mv /var/lib/dpkg/info_old/ /var/lib/dpkg/info &&  sudo apt -f install && sudo apt --fix-broken install && sudo apt-get update && echo "apt修复成功..."
 echo "安装必备软件..."
