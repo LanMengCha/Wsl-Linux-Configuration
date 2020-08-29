@@ -9,7 +9,8 @@ echo "项目内的其他文件都没什么用（都被我放进来了）除了.z
 echo "测试apt..."
 sudo apt -f install || echo "apt修复中..." sudo mv /var/lib/dpkg/info/ /var/lib/dpkg/info_old/ && sudo mkdir /var/lib/dpkg/info/ && sudo apt-get update && sudo apt-get -f install && sudo mv /var/lib/dpkg/info/* /var/lib/dpkg/info_old/ && sudo rm -rf /var/lib/dpkg/info && sudo mv /var/lib/dpkg/info_old/ /var/lib/dpkg/info &&  sudo apt -f install && sudo apt --fix-broken install && sudo apt-get update && echo "apt修复成功..."
 echo "安装必备软件..."
-sudo apt install g++ && sudo apt install python && sudo apt install wget && sudo apt install git && sudo apt install curl && sudo apt install vim
+sudo apt install -y g++ && sudo apt install -y python && sudo apt install -y wget && sudo apt install -y git && sudo apt install -y curl && sudo apt install -y vim && sudo apt install -y neofetch
+neofetch
 echo "安装Z Shell..."
 sudo apt-get -y install zsh
 echo "安装onmyzshzsh..."
